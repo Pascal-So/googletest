@@ -5,7 +5,11 @@ if (POLICY CMP0048)
 endif (POLICY CMP0048)
 
 project(googletest-distribution)
-set(GOOGLETEST_VERSION 1.9.0)
+
+# Note that GOOGLETEST_VERSION is set to 1.9.0 in google/googletest at the
+# 1.8.1 release, see this discussion for details:
+# https://github.com/ruslo/hunter/issues/1856
+set(GOOGLETEST_VERSION 1.8.1)
 
 enable_testing()
 
